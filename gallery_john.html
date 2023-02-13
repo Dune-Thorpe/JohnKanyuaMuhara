@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>JohnKanyuaMuhara PhotoGallery</title>
+    <script src="scripts/gallery_johnKanyua.js"></script>
+    <script src="scripts/global.js"></script>
+    <style>
+        body {
+            font-family: Degular-Display-Semibold, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+        }
+        .horizontal-media-scroller {
+            --size: 150px;
+
+            display: grid;
+            grid-auto-flow: column;
+            gap: calc(var(--gap) / 2);
+            margin: 0;
+
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+
+            padding-inline: var(--gap);
+            scroll-padding-inline: var(--gap);
+            padding-block: calc(var(--gap) / 2);
+
+            scroll-behavior: inline-mandatory;
+           
+        }
+        .horizontal-media-scroller a {
+            text-decoration: none;
+        }
+        
+        figure {
+            scroll-snap-align: start;
+        }
+        li {
+                display: inline-block;
+            }
+        picture {
+                inline-size: var(--size);
+                block-size: var(--size);
+            }
+        
+        img {
+            inline-size: 8rem;
+            block-size: 8rem;
+
+            object-fit: cover;
+
+            border-radius: 1ex;
+            overflow: hidden;
+
+            background-image: linear-gradient(
+                to bottom,
+                hsl(0 0% 40%),
+                hsl(0 0% 20%)
+            );
+        }
+        #placeholder {
+           width: 100%;
+           height: 100%;
+        }
+        figcaption {
+            font-size: .75rem;
+            text-align: center;
+            text-rendering: auto;
+        }
+        #description {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="picture_container">
+        <ul class="horizontal-media-scroller" id="galleryImg">
+       
+            <li>
+                <a href="assets/Images/John_01-1.jpg" title="Mr. John Kanyua Muhara.">
+                    <figure>
+                        <picture>
+                            <img alt="John Kanyua Muhara's Head shot (Portrait)" loading="lazy" src="assets/Images/John_01-1.jpg" >
+                        </picture>
+                        <figcaption>John Kanyua Muhara <br> (1960 - 2023)</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="Assets/Images/John_02-1.jpg" title="The family and friends posing around a coffee table.">
+                    <figure>
+                        <picture>
+                            <img alt="The family and friends posing around a coffee table." loading="lazy" src="Assets/Images/John_02-1.jpg" >
+                        </picture>
+                        <figcaption>Everytime is Tea Time</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="assets/Images/John_03-1.jpg" title="The family and friends posing around a coffee table.">
+                    <figure>
+                        <picture>
+                            <img alt="The family and friends posing around a coffee table." loading="lazy" src="assets/Images/John_03-1.jpg" >
+                        </picture>
+                        <figcaption>Tea is Life</figcaption>
+                    </figure>
+                </a>    
+            </li>
+            <li>
+                <a href="Assets/Images/John_04-1.jpg" title="Mr and Mrs Cyrus Muhara Kinyua and kids">
+                    <figure>
+                        <picture>
+                            <img alt="Mr and Mrs Cyrus Muhara Kinyua and kids" loading="lazy" src="Assets/Images/John_04-1.jpg" >
+                        </picture>
+                        <figcaption>Say CHEESE!</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="Assets/Images/John_05-1.jpg" title="Mr. John Kanyua Muhara and grandchildren">
+                    <figure>
+                        <picture>
+                            <img alt="Mr. John Kanyua Muhara and grandchildren" loading="lazy" src="Assets/Images/John_05-1.jpg" >
+                        </picture>
+                        <figcaption>Mr. John Kanyua Muhara and grandchildren</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="Assets/Images/John_06-1.jpg" title="Mr. John Kanyua Muhara and grandchildren.">
+                    <figure>
+                        <picture>
+                            <img alt="Mr. John Kanyua Muhara and grandchildren." loading="lazy" src="Assets/Images/John_06-1.jpg" >
+                        </picture>
+                        <figcaption>Mr. John Kanyua Muhara and grandchildren.</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
